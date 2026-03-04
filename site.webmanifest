@@ -1,0 +1,21 @@
+{
+  "name": "SpiceTick — Premium Kerala Spices",
+  "short_name": "SpiceTick",
+  "description": "Premium quality cardamom, cloves, and pepper sourced directly from Kerala.",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#c8a45c",
+  "background_color": "#0a0a0a",
+  "display": "standalone",
+  "start_url": "index.html"
+}
