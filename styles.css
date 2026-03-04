@@ -722,18 +722,6 @@ a {
     display: none !important;
 }
 
-/* Specific fitting for Pepper image */
-.pepper-detail-image {
-    background: #000;
-    /* Ensure black void for contained image */
-}
-
-.pepper-detail-image img {
-    height: 550px;
-    object-fit: contain;
-    /* Fit without cropping */
-    object-position: center;
-}
 
 .back-btn {
     display: inline-flex;
@@ -1502,11 +1490,6 @@ a {
         font-size: 0.8rem;
     }
 
-    .pepper-detail-image img {
-        height: 450px;
-        /* Even shorter on mobile for pepper */
-        object-fit: contain;
-    }
 
     .hero {
         width: 100%;
