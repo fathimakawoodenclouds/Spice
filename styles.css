@@ -645,6 +645,11 @@ a {
     transform: scale(1.08);
 }
 
+#product-cardamom img,
+#product-pepper img {
+    object-position: center bottom;
+}
+
 .product-glow {
     display: none;
 }
