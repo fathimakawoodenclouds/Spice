@@ -1367,7 +1367,9 @@ a {
     }
 
     #gallery-1 img,
-    #gallery-7 img {
+    #gallery-7 img,
+    #product-cardamom img,
+    #product-pepper img {
         object-fit: cover !important;
         object-position: center bottom !important;
     }
@@ -1425,7 +1427,9 @@ a {
     }
 
     #gallery-1 img,
-    #gallery-7 img {
+    #gallery-7 img,
+    #product-cardamom img,
+    #product-pepper img {
         object-fit: cover !important;
         object-position: center bottom !important;
     }
