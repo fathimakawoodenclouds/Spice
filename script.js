@@ -7,15 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---- LOADING SCREEN ----
     const loader = document.getElementById('loader');
-    window.addEventListener('load', () => {
+    if (loader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 1200);
+        });
+        // Fallback: hide loader after 4s even if load event is slow
         setTimeout(() => {
             loader.classList.add('hidden');
-        }, 1200);
-    });
-    // Fallback: hide loader after 4s even if load event is slow
-    setTimeout(() => {
-        loader.classList.add('hidden');
-    }, 4000);
+        }, 4000);
+    }
 
 
     // ---- NAVBAR SCROLL BEHAVIOR ----
@@ -71,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Close mobile menu if open
             const mobileMenu = document.getElementById('mobileMenu');
             const hamburger = document.getElementById('hamburger');
-            if (mobileMenu.classList.contains('active')) {
+            if (mobileMenu && hamburger && mobileMenu.classList.contains('active')) {
                 mobileMenu.classList.remove('active');
                 hamburger.classList.remove('active');
                 document.body.style.overflow = '';
@@ -84,11 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    });
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+    }
 
 
     // ---- VIDEO MUTE/UNMUTE ----
