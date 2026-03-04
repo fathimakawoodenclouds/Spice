@@ -1486,6 +1486,22 @@ a {
         gap: 8px;
     }
 
+    .product-mobile-link {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 10px;
+        color: var(--accent-primary);
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .product-mobile-link i {
+        font-size: 0.8rem;
+    }
+
     .pepper-detail-image img {
         height: 450px;
         /* Even shorter on mobile for pepper */
