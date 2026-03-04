@@ -19,7 +19,7 @@
     --border-glow: rgba(233, 30, 144, 0.3);
     --font-heading: 'Playfair Display', 'Georgia', serif;
     --font-body: 'Inter', 'Segoe UI', sans-serif;
-    --nav-height: 80px;
+    --nav-height: 150px;
     --section-padding: 120px 0;
     --container-width: 1200px;
     --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -215,13 +215,17 @@ a {
 }
 
 .nav-logo img {
-    height: 120px;
+    height: 100px;
     width: auto;
     transition: transform var(--transition-fast);
+    display: block;
 }
 
-.nav-logo:hover img {
-    transform: scale(1.05);
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 /* Hamburger */
@@ -1207,7 +1211,7 @@ a {
 @media (max-width: 768px) {
     :root {
         --section-padding: 80px 0;
-        --nav-height: 105px;
+        --nav-height: 110px;
     }
 
     .nav-container {
@@ -1242,17 +1246,14 @@ a {
 
     /* Mobile logo */
     .nav-logo-mobile {
-        display: block;
-        position: absolute;
-        left: 5px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        max-width: calc(100% - 60px);
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 15px;
     }
 
     .nav-logo-mobile img {
-        height: 100px;
+        height: 90px;
         width: auto;
     }
 
